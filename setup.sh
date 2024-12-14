@@ -6,5 +6,5 @@ sudo adduser --disabled-password --gecos "" devops && echo "devops:admin" | sudo
 sudo sed -i "s/PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config.d/*.conf
 sudo systemctl daemon-reload
 sudo systemctl restart ssh
-sudo apt install nginx -y
-sudo systemctl enable nginx
+#sudo apt install nginx -y
+#sudo systemctl enable nginx
