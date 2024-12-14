@@ -19,7 +19,7 @@ provider "aws" {
 }
 resource "aws_instance" "Node1" {
   ami                    = "ami-0eb9fdcf0d07bd5ef"
-  count                  = 2 # number of instance you want to create
+  count                  = 1 # number of instance you want to create
   instance_type          = "t2.micro"
   key_name               = "central"                # Use the key name only, without .pem
   vpc_security_group_ids = ["sg-068fe1da0b214589b"] # Use a list for security group IDs
